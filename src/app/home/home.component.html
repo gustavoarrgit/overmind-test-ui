@@ -1,0 +1,34 @@
+<div class="content-section introduction">
+</div>
+<form id="form" name="form" #form="ngForm">
+  <div class="content-section implementation" style="min-height: 550px;">
+
+    <h5>Crawler IMDb - Lowest Rated Movies </h5>
+
+    <h5>Float Label</h5>
+
+    <p-table [value]="movies" responsiveLayout="scroll">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Position</th>
+          <th>Title</th>
+          <th>Rating</th>
+          <th>Director</th>
+          <th>Casting</th>
+          <th>Comment</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-movie>
+        <tr>
+          <td>{{movie.position}}</td>
+          <td>{{movie.title}}</td>
+          <td>{{movie.rating}}</td>
+          <td>{{movie.director}}</td>
+          <td>{{movie.casting}}</td>
+          <td>{{movie.comment}}</td>
+
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</form>
