@@ -9,7 +9,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   movies: CrawlerDTO[] ;
-
   constructor(private http: HttpClient,
     private service: Service) {}
 
