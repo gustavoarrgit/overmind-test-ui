@@ -15,7 +15,7 @@ export class Service {
 
   consultar(quantidade: number): Observable<CrawlerDTO[]> {
 
-    return this.http.get<CrawlerDTO[]>(`http://localhost:8080/crawler/${quantidade}`);
+    return this.http.get<CrawlerDTO[]>(`https://overmind-test-backend.herokuapp.com/crawler-api/crawler/${quantidade}`);
   }
 
 
